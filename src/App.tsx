@@ -50,22 +50,6 @@ const App = () => {
           <AccountPage />
         </ProtectedRoute>
       } />
-      <Route path="/dashboard/orders" element={
-        <ProtectedRoute>
-          <UserOrdersPage />
-        </ProtectedRoute>
-      } />
-      <Route path="/dashboard/orders/:orderId" element={
-        <ProtectedRoute>
-          <UserOrderDetailPage />
-        </ProtectedRoute>
-      } />
-      <Route path="/track-order" element={<TrackOrderPage />} />
-      <Route path="/profile" element={
-        <ProtectedRoute>
-          <Navigate to="/account" replace />
-        </ProtectedRoute>
-      } />
       <Route path="/search" element={<SearchPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
